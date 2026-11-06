@@ -22,10 +22,47 @@ We are borrowing this template for use with the capstone program
 <body>
 
   <!-- Navigation -->
-.navbar-inverse {
+<style> 
+	.navbar-inverse {
   background-color: #91175e; /* Replace with your desired header background color */
   border-color: #f4f3ef;     /* Border color below the header */
-}
+	}
+/* Unselected link text: soft rose tint of your magenta #fce7f3 */
+  .navbar-inverse .navbar-nav > li > a {
+    color: #f4f3ef;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Link text on hover/mouse-over */
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    color: #f4f3ef;
+    background-color: #7b124e; /* Slightly darker shade of the berry */
+  }
+
+  /* The active page link */
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #f4f3ef;
+    background-color: #5c0d3a; /* Deep wine tone to highlight the current page */
+  }
+
+  /* Mobile menu toggle (hamburger button) */
+  .navbar-inverse .navbar-toggle {
+    border-color: #fce7f3;
+  }
+  .navbar-inverse .navbar-toggle:hover,
+  .navbar-inverse .navbar-toggle:focus {
+    background-color: #7b124e;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fce7f3;
+  }
+</style>
+
   <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
